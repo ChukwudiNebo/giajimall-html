@@ -61,6 +61,7 @@
   .cart__item-button {
     color: red;
     border: 1px solid red;
+    background-color: #f3faff;
     padding: 10px 31px;
     font-weight: 500;
     border-radius: 5px;
@@ -77,12 +78,11 @@
 
   /* seller info  */
   #sellerButton {
-background-color: unset;
-border: unset;
-color: #0b5ed7;
-text-decoration: underline;
-padding-bottom: 5px;
-
+    background-color: unset;
+    border: unset;
+    color: #0b5ed7;
+    text-decoration: underline;
+    padding-bottom: 5px;
   }
   #showAd {
     margin-top: 10px;
@@ -90,6 +90,7 @@ padding-bottom: 5px;
     width: 100%;
     color: #0b5ed7;
     border: 1px solid #0b5ed7;
+    background-color: #f3faff;
     padding: 10px 31px;
     font-weight: 500;
     border-radius: 5px;
@@ -104,13 +105,12 @@ padding-bottom: 5px;
     padding: 10px 31px;
   }
 
-    #sellerButton2 {
-background-color: unset;
-border: unset;
-color: #0b5ed7;
-text-decoration: underline;
-padding-bottom: 5px;
-
+  #sellerButton2 {
+    background-color: unset;
+    border: unset;
+    color: #0b5ed7;
+    text-decoration: underline;
+    padding-bottom: 5px;
   }
   #showAd2 {
     margin-top: 10px;
@@ -118,6 +118,7 @@ padding-bottom: 5px;
     width: 100%;
     color: #0b5ed7;
     border: 1px solid #0b5ed7;
+    background-color: #f3faff;
     padding: 10px 31px;
     font-weight: 500;
     border-radius: 5px;
@@ -132,13 +133,12 @@ padding-bottom: 5px;
     padding: 10px 31px;
   }
 
-    #sellerButton3 {
-background-color: unset;
-border: unset;
-color: #0b5ed7;
-text-decoration: underline;
-padding-bottom: 5px;
-
+  #sellerButton3 {
+    background-color: unset;
+    border: unset;
+    color: #0b5ed7;
+    text-decoration: underline;
+    padding-bottom: 5px;
   }
   #showAd3 {
     margin-top: 10px;
@@ -146,6 +146,7 @@ padding-bottom: 5px;
     width: 100%;
     color: #0b5ed7;
     border: 1px solid #0b5ed7;
+    background-color: #f3faff;
     padding: 10px 31px;
     font-weight: 500;
     border-radius: 5px;
@@ -160,14 +161,13 @@ padding-bottom: 5px;
     padding: 10px 31px;
   }
 
-/* .card-condition{
+  /* .card-condition{
   margin-bottom: 10px;
 }
 .card-color{
   margin-top: 10px;
   margin-bottom: 10px;
 } */
-
 
   /* show ad details  */
   .card {
@@ -178,7 +178,7 @@ padding-bottom: 5px;
     -moz-border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
     -ms-border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
     -o-border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
-}
+  }
 
   .card-header {
     font-size: 10px;
@@ -225,9 +225,9 @@ padding-bottom: 5px;
   */
     font-style: normal;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 25px;
-    padding: 10px 31px;
+    padding: 5px 21px;
     border: 1px solid red;
     color: white;
     background-color: red;
@@ -252,12 +252,11 @@ padding-bottom: 5px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
   }
-   .showAd__dropdown {
+  .showAd__dropdown {
     width: 550px;
     /* width: 45%; */
   }
 
-  
   .cart__checkout-paragraph {
     background-color: #0b5ed7 !important;
     margin-bottom: 0px !important;
@@ -290,7 +289,7 @@ padding-bottom: 5px;
     background-color: #0b5ed7 !important;
     /* margin-bottom: 25px; */
   }
-   .cart__checkout {
+  .cart__checkout {
     width: 500px;
     padding: 20px;
     font-size: 13px;
@@ -309,7 +308,7 @@ padding-bottom: 5px;
   }
 }
 @media screen and (min-width: 992px) {
-   .cart__checkout {
+  .cart__checkout {
     width: 600px;
     padding: 20px;
     font-size: 13px;
@@ -390,6 +389,7 @@ padding-bottom: 5px;
   .cart__item-button {
     color: red;
     border: 1px solid red;
+    background-color: #f3faff;
     padding: 10px 31px;
     font-weight: 500;
     border-radius: 5px;

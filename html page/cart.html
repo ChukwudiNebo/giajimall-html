@@ -32,7 +32,10 @@
   </head>
   <body>
     <!-- Navbar start -->
-    <div class="pt-2 pt-lg-0">
+    <div
+      class="pt-2 pt-lg-0 w-100"
+      style="position: fixed; background-color: #f3faff"
+    >
       <div
         class="d-flex flex-nowrap align-items-baseline justify-content-between navbar"
       >
@@ -59,487 +62,535 @@
       </div>
     </div>
     <!-- Navbar end -->
-
-    <!-- Search input   -->
-    <section>
-      <div>
-        <div class="text-md-end input__div">
-          <input
-            type="text"
-            name="search"
-            id="input"
-            placeholder="Search by product"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="cart">
+    <main style="background-color: #f3faff">
+      <!-- Search input   -->
+      <section>
         <div>
-          <p class="cart__header">Cart</p>
-        </div>
-        <div class="d-flex justify-content-between flex-wrap">
-          <div>
-            <div
-              class="d-flex justify-content-between flex-wrap cart__checkout"
-            >
-              <!-- <div> -->
-              <p class="cart__checkout-paragraph">
-                The Product has been added to your cart.
-              </p>
-              <!-- </div> -->
-              <div class="cart__checkout-link">
-                <a href="#">Checkout</a>
-              </div>
-            </div>
-            <div>
-              <div class="d-flex flex-wrap justify-content-between cart__item">
-                <div>
-                  <img
-                    src="../images/5_gold_042764750612888_184996_6605208.jpeg"
-                    alt="cart-img"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="cart__item-header mx-3 mx-md-0">
-                  <p>Gold</p>
-                </div>
-                <div class="text-center order-3 order-sm-0">
-                  <p class="cart__item-quantity">Quantity</p>
-                  <p>1</p>
-                </div>
-                <div class="order-4 order-sm-0">
-                  <p class="cart__item-price cart__item-quantity">Price</p>
-                  <p>Y3,000</p>
-                </div>
-                <div>
-                  <button
-                    type="button"
-                    class="cart__item-button order-2 order-sm-0"
-                  >
-                    delete
-                  </button>
-                </div>
-                
-              </div>
-              <div>
-                <button id="sellerButton">Seller info</button>
-                <div id="sellerInfo" style="display: none">
-                  <div class="d-flex">
-                    <div>
-                      <button
-                        type="button"
-                        class="btn btn-primary position-relative"
-                      >
-                        B
-                        <span
-                          class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
-                        >
-                        </span>
-                      </button>
-                    </div>
-                    <div class="mx-2">
-                      <div>
-                        <p style="margin-bottom: 0px">Babii Matsuura</p>
-                      </div>
-                      <span class="badge bg-success">
-                        verified
-                        <i class="fa fa-check-circle p-0 mx-1"></i>
-                      </span>
-                      <div>
-                        <span
-                          class="badge bg-light text-dark"
-                          style="padding-left: 0px"
-                        >
-                          <i class="fa fa-clock-o"></i>&nbsp;
-                          <span class="badge bg-dark text-light">7 months</span>
-                          in Gaijinmall
-                        </span>
-                      </div>
-                      <div class="d-flex flex-wrap">
-                        <div>
-                          <a href="">Call Seller</a>
-                        </div>
-                        <div class="mx-1 mx-md-2">
-                          <a href="">Send Seller message</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <button type="button" id="showAd">Show Ad Details</button>
-                  </div>
-                  <div id="showAdDropdown" style="display: none">
-                    <!-- card 1 -->
-                    <div class="d-flex flex-wrap justify-content-between showAd__dropdown">
-                      <div class="card my-2 my-md-0" style="width: 8rem">
-                        <div class="card-header">Type</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Chains</li>
-                        </ul>
-                      </div>
-                      <!-- card 2 -->
-                      <div class="card my-2 my-md-0 card-condition" style="width: 8rem">
-                        <div class="card-header">CONDITION</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Used</li>
-                        </ul>
-                      </div>
-                      <!-- card 3 -->
-                      <div class="card my-2 my-md-0 card-color" style="width: 8rem">
-                        <div class="card-header">COLOUR</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Gold</li>
-                        </ul>
-                      </div>
-                      <!-- card 4 -->
-                      <div class="card card-gender my-2 my-md-0" style="width: 8rem">
-                        <div class="card-header">GENDER</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Men's</li>
-                        </ul>
-                      </div>
-                      <!-- card 5 -->
-                      <div class="card card-brand my-2" style="width: 8rem">
-                        <div class="card-header">BRAND</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">A New Day</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr />
-              <div class="d-flex flex-wrap justify-content-between cart__item">
-                <div>
-                  <img
-                    src="../images/5_gold_042764750612888_184996_6605208.jpeg"
-                    alt="cart-img"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="cart__item-header mx-3 mx-md-0">
-                  <p>Gold</p>
-                </div>
-                <div class="text-center order-3 order-sm-0">
-                  <p class="cart__item-quantity">Quantity</p>
-                  <p>1</p>
-                </div>
-                <div class="order-4 order-sm-0">
-                  <p class="cart__item-price cart__item-quantity">Price</p>
-                  <p>Y3,000</p>
-                </div>
-                <div>
-                  <button
-                    type="button"
-                    class="cart__item-button order-2 order-sm-0"
-                  >
-                    delete
-                  </button>
-                </div>
-              </div>
-              <div>
-                <button id="sellerButton2">Seller info</button>
-                <div id="sellerInfo2" style="display: none">
-                  <div class="d-flex">
-                    <div>
-                      <button
-                        type="button"
-                        class="btn btn-primary position-relative"
-                      >
-                        B
-                        <span
-                          class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
-                        >
-                        </span>
-                      </button>
-                    </div>
-                    <div class="mx-2">
-                      <div>
-                        <p style="margin-bottom: 0px">Babii Matsuura</p>
-                      </div>
-                      <span class="badge bg-success">
-                        verified
-                        <i class="fa fa-check-circle p-0 mx-1"></i>
-                      </span>
-                      <div>
-                        <span
-                          class="badge bg-light text-dark"
-                          style="padding-left: 0px"
-                        >
-                          <i class="fa fa-clock-o"></i>&nbsp;
-                          <span class="badge bg-dark text-light">7 months</span>
-                          in Gaijinmall
-                        </span>
-                      </div>
-                      <div class="d-flex flex-wrap">
-                        <div>
-                          <a href="">Call Seller</a>
-                        </div>
-                        <div class="mx-1 mx-md-2">
-                          <a href="">Send Seller message</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <button type="button" id="showAd2">Show Ad Details</button>
-                  </div>
-                  <div id="showAdDropdown2" style="display: none">
-                    <!-- card 1 -->
-                    <div class="d-flex flex-wrap justify-content-between showAd__dropdown">
-                      <div class="card my-2 my-md-0" style="width: 8rem">
-                        <div class="card-header">Type</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Chains</li>
-                        </ul>
-                      </div>
-                      <!-- card 2 -->
-                      <div class="card my-2 my-md-0 card-condition" style="width: 8rem">
-                        <div class="card-header">CONDITION</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Used</li>
-                        </ul>
-                      </div>
-                      <!-- card 3 -->
-                      <div class="card my-2 my-md-0 card-color" style="width: 8rem">
-                        <div class="card-header">COLOUR</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Gold</li>
-                        </ul>
-                      </div>
-                      <!-- card 4 -->
-                      <div class="card card-gender my-2 my-md-0" style="width: 8rem">
-                        <div class="card-header">GENDER</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Men's</li>
-                        </ul>
-                      </div>
-                      <!-- card 5 -->
-                      <div class="card card-brand my-2" style="width: 8rem">
-                        <div class="card-header">BRAND</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">A New Day</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr />
-              <!--  -->
-              <div class="d-flex flex-wrap justify-content-between cart__item">
-                <div>
-                  <img
-                    src="../images/5_gold_042764750612888_184996_6605208.jpeg"
-                    alt="cart-img"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="cart__item-header mx-3 mx-md-0">
-                  <p>Gold</p>
-                </div>
-                <div class="text-center order-3 order-sm-0">
-                  <p class="cart__item-quantity">Quantity</p>
-                  <p>1</p>
-                </div>
-                <div class="order-4 order-sm-0">
-                  <p class="cart__item-price cart__item-quantity">Price</p>
-                  <p>Y3,000</p>
-                </div>
-                <div>
-                  <button
-                    type="button"
-                    class="cart__item-button order-2 order-sm-0"
-                  >
-                    delete
-                  </button>
-                </div>
-              </div>
-              <div>
-                <button id="sellerButton3">Seller info</button>
-                <div id="sellerInfo3" style="display: none">
-                  <div class="d-flex">
-                    <div>
-                      <button
-                        type="button"
-                        class="btn btn-primary position-relative"
-                      >
-                        B
-                        <span
-                          class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
-                        >
-                        </span>
-                      </button>
-                    </div>
-                    <div class="mx-2">
-                      <div>
-                        <p style="margin-bottom: 0px">Babii Matsuura</p>
-                      </div>
-                      <span class="badge bg-success">
-                        verified
-                        <i class="fa fa-check-circle p-0 mx-1"></i>
-                      </span>
-                      <div>
-                        <span
-                          class="badge bg-light text-dark"
-                          style="padding-left: 0px"
-                        >
-                          <i class="fa fa-clock-o"></i>&nbsp;
-                          <span class="badge bg-dark text-light">7 months</span>
-                          in Gaijinmall
-                        </span>
-                      </div>
-                      <div class="d-flex flex-wrap">
-                        <div>
-                          <a href="">Call Seller</a>
-                        </div>
-                        <div class="mx-1 mx-md-2">
-                          <a href="">Send Seller message</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <button type="button" id="showAd3">Show Ad Details</button>
-                  </div>
-                  <div id="showAdDropdown3" style="display: none">
-                    <!-- card 1 -->
-                    <div class="d-flex flex-wrap justify-content-between showAd__dropdown">
-                      <div class="card my-2 my-md-0" style="width: 8rem">
-                        <div class="card-header">Type</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Chains</li>
-                        </ul>
-                      </div>
-                      <!-- card 2 -->
-                      <div class="card my-2 my-md-0 card-condition" style="width: 8rem">
-                        <div class="card-header">CONDITION</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Used</li>
-                        </ul>
-                      </div>
-                      <!-- card 3 -->
-                      <div class="card my-2 my-md-0 card-color" style="width: 8rem">
-                        <div class="card-header">COLOUR</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Gold</li>
-                        </ul>
-                      </div>
-                      <!-- card 4 -->
-                      <div class="card card-gender my-2 my-md-0" style="width: 8rem">
-                        <div class="card-header">GENDER</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">Men's</li>
-                        </ul>
-                      </div>
-                      <!-- card 5 -->
-                      <div class="card card-brand my-2" style="width: 8rem">
-                        <div class="card-header">BRAND</div>
-                        <ul
-                          class="list-group list-group-flush list-unstyled"
-                          style="margin-bottom: 0px"
-                        >
-                          <li class="list-group-item">A New Day</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr />
-            </div>
-          </div>
-          <div>
-            <!-- top rated -->
-            <div>
-              <div class="cart__product">
-                <p>Add product to your Cart</p>
-              </div>
-              <div>
-                <div class="AddToCart">
-                  <div class="d-flex align-items-start my-3">
-                    <div>
-                      <img
-                        src="../images/5_gold_042764750612888_184996_6605208.jpeg"
-                        class="img-fluid AddToCart__img"
-                      />
-                    </div>
-                    <div class="mx-3">
-                      <div>
-                        <p style="margin-bottom: 0px">Laptop</p>
-                      </div>
-                      <div class="AddToCart__header my-2">
-                        <div style="font-weight: bold">
-                          <p style="margin-bottom: 0px">Y5000</p>
-                        </div>
-                        <div class="">
-                          <button type="button" class="buttonDanger">
-                            View Product
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <hr />
-                </div>
-              </div>
-            </div>
+          <div class="text-md-end input__div">
+            <input
+              type="text"
+              name="search"
+              id="input"
+              placeholder="Search by product"
+            />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <section>
+        <div class="cart">
+          <div>
+            <p class="cart__header">Cart</p>
+          </div>
+          <div class="d-flex justify-content-between flex-wrap">
+            <div>
+              <div
+                class="d-flex justify-content-between flex-wrap cart__checkout"
+              >
+                <!-- <div> -->
+                <p class="cart__checkout-paragraph">
+                  The Product has been added to your cart.
+                </p>
+                <!-- </div> -->
+                <div class="cart__checkout-link">
+                  <a href="#">Checkout</a>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="d-flex flex-wrap justify-content-between cart__item"
+                >
+                  <div>
+                    <img
+                      src="../images/5_gold_042764750612888_184996_6605208.jpeg"
+                      alt="cart-img"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart__item-header mx-3 mx-md-0">
+                    <p>Gold</p>
+                  </div>
+                  <div class="text-center order-3 order-sm-0">
+                    <p class="cart__item-quantity">Quantity</p>
+                    <p>1</p>
+                  </div>
+                  <div class="order-4 order-sm-0">
+                    <p class="cart__item-price cart__item-quantity">Price</p>
+                    <p>Y3,000</p>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      class="cart__item-button order-2 order-sm-0"
+                    >
+                      delete
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <button id="sellerButton">Seller info</button>
+                  <div id="sellerInfo" style="display: none">
+                    <div class="d-flex">
+                      <div>
+                        <button
+                          type="button"
+                          class="btn btn-primary position-relative"
+                        >
+                          B
+                          <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
+                          >
+                          </span>
+                        </button>
+                      </div>
+                      <div class="mx-2">
+                        <div>
+                          <p style="margin-bottom: 0px">Babii Matsuura</p>
+                        </div>
+                        <span class="badge bg-success">
+                          verified
+                          <i class="fa fa-check-circle p-0 mx-1"></i>
+                        </span>
+                        <div>
+                          <span
+                            class="badge bg-light text-dark"
+                            style="padding-left: 0px"
+                          >
+                            <i class="fa fa-clock-o"></i>&nbsp;
+                            <span class="badge bg-dark text-light"
+                              >7 months</span
+                            >
+                            in Gaijinmall
+                          </span>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                          <div>
+                            <a href="">Call Seller</a>
+                          </div>
+                          <div class="mx-1 mx-md-2">
+                            <a href="">Send Seller message</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <button type="button" id="showAd">Show Ad Details</button>
+                    </div>
+                    <div id="showAdDropdown" style="display: none">
+                      <!-- card 1 -->
+                      <div
+                        class="d-flex flex-wrap justify-content-between showAd__dropdown"
+                      >
+                        <div class="card my-2 my-md-0" style="width: 8rem">
+                          <div class="card-header">Type</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Chains</li>
+                          </ul>
+                        </div>
+                        <!-- card 2 -->
+                        <div
+                          class="card my-2 my-md-0 card-condition"
+                          style="width: 8rem"
+                        >
+                          <div class="card-header">CONDITION</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Used</li>
+                          </ul>
+                        </div>
+                        <!-- card 3 -->
+                        <div
+                          class="card my-2 my-md-0 card-color"
+                          style="width: 8rem"
+                        >
+                          <div class="card-header">COLOUR</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Gold</li>
+                          </ul>
+                        </div>
+                        <!-- card 4 -->
+                        <div
+                          class="card card-gender my-2 my-md-0"
+                          style="width: 8rem"
+                        >
+                          <div class="card-header">GENDER</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Men's</li>
+                          </ul>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="card card-brand my-2" style="width: 8rem">
+                          <div class="card-header">BRAND</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">A New Day</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="d-flex flex-wrap justify-content-between cart__item"
+                >
+                  <div>
+                    <img
+                      src="../images/5_gold_042764750612888_184996_6605208.jpeg"
+                      alt="cart-img"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart__item-header mx-3 mx-md-0">
+                    <p>Gold</p>
+                  </div>
+                  <div class="text-center order-3 order-sm-0">
+                    <p class="cart__item-quantity">Quantity</p>
+                    <p>1</p>
+                  </div>
+                  <div class="order-4 order-sm-0">
+                    <p class="cart__item-price cart__item-quantity">Price</p>
+                    <p>Y3,000</p>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      class="cart__item-button order-2 order-sm-0"
+                    >
+                      delete
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <button id="sellerButton2">Seller info</button>
+                  <div id="sellerInfo2" style="display: none">
+                    <div class="d-flex">
+                      <div>
+                        <button
+                          type="button"
+                          class="btn btn-primary position-relative"
+                        >
+                          B
+                          <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
+                          >
+                          </span>
+                        </button>
+                      </div>
+                      <div class="mx-2">
+                        <div>
+                          <p style="margin-bottom: 0px">Babii Matsuura</p>
+                        </div>
+                        <span class="badge bg-success">
+                          verified
+                          <i class="fa fa-check-circle p-0 mx-1"></i>
+                        </span>
+                        <div>
+                          <span
+                            class="badge bg-light text-dark"
+                            style="padding-left: 0px"
+                          >
+                            <i class="fa fa-clock-o"></i>&nbsp;
+                            <span class="badge bg-dark text-light"
+                              >7 months</span
+                            >
+                            in Gaijinmall
+                          </span>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                          <div>
+                            <a href="">Call Seller</a>
+                          </div>
+                          <div class="mx-1 mx-md-2">
+                            <a href="">Send Seller message</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <button type="button" id="showAd2">
+                        Show Ad Details
+                      </button>
+                    </div>
+                    <div id="showAdDropdown2" style="display: none">
+                      <!-- card 1 -->
+                      <div
+                        class="d-flex flex-wrap justify-content-between showAd__dropdown"
+                      >
+                        <div class="card my-2 my-md-0" style="width: 8rem">
+                          <div class="card-header">Type</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Chains</li>
+                          </ul>
+                        </div>
+                        <!-- card 2 -->
+                        <div
+                          class="card my-2 my-md-0 card-condition"
+                          style="width: 8rem"
+                        >
+                          <div class="card-header">CONDITION</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Used</li>
+                          </ul>
+                        </div>
+                        <!-- card 3 -->
+                        <div
+                          class="card my-2 my-md-0 card-color"
+                          style="width: 8rem"
+                        >
+                          <div class="card-header">COLOUR</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Gold</li>
+                          </ul>
+                        </div>
+                        <!-- card 4 -->
+                        <div
+                          class="card card-gender my-2 my-md-0"
+                          style="width: 8rem"
+                        >
+                          <div class="card-header">GENDER</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Men's</li>
+                          </ul>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="card card-brand my-2" style="width: 8rem">
+                          <div class="card-header">BRAND</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">A New Day</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <!--  -->
+                <div
+                  class="d-flex flex-wrap justify-content-between cart__item"
+                >
+                  <div>
+                    <img
+                      src="../images/5_gold_042764750612888_184996_6605208.jpeg"
+                      alt="cart-img"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart__item-header mx-3 mx-md-0">
+                    <p>Gold</p>
+                  </div>
+                  <div class="text-center order-3 order-sm-0">
+                    <p class="cart__item-quantity">Quantity</p>
+                    <p>1</p>
+                  </div>
+                  <div class="order-4 order-sm-0">
+                    <p class="cart__item-price cart__item-quantity">Price</p>
+                    <p>Y3,000</p>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      class="cart__item-button order-2 order-sm-0"
+                    >
+                      delete
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <button id="sellerButton3">Seller info</button>
+                  <div id="sellerInfo3" style="display: none">
+                    <div class="d-flex">
+                      <div>
+                        <button
+                          type="button"
+                          class="btn btn-primary position-relative"
+                        >
+                          B
+                          <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
+                          >
+                          </span>
+                        </button>
+                      </div>
+                      <div class="mx-2">
+                        <div>
+                          <p style="margin-bottom: 0px">Babii Matsuura</p>
+                        </div>
+                        <span class="badge bg-success">
+                          verified
+                          <i class="fa fa-check-circle p-0 mx-1"></i>
+                        </span>
+                        <div>
+                          <span
+                            class="badge bg-light text-dark"
+                            style="padding-left: 0px"
+                          >
+                            <i class="fa fa-clock-o"></i>&nbsp;
+                            <span class="badge bg-dark text-light"
+                              >7 months</span
+                            >
+                            in Gaijinmall
+                          </span>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                          <div>
+                            <a href="">Call Seller</a>
+                          </div>
+                          <div class="mx-1 mx-md-2">
+                            <a href="">Send Seller message</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <button type="button" id="showAd3">
+                        Show Ad Details
+                      </button>
+                    </div>
+                    <div id="showAdDropdown3" style="display: none">
+                      <!-- card 1 -->
+                      <div
+                        class="d-flex flex-wrap justify-content-between showAd__dropdown"
+                      >
+                        <div class="card my-2 my-md-0" style="width: 8rem">
+                          <div class="card-header">Type</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Chains</li>
+                          </ul>
+                        </div>
+                        <!-- card 2 -->
+                        <div
+                          class="card my-2 my-md-0 card-condition"
+                          style="width: 8rem"
+                        >
+                          <div class="card-header">CONDITION</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Used</li>
+                          </ul>
+                        </div>
+                        <!-- card 3 -->
+                        <div
+                          class="card my-2 my-md-0 card-color"
+                          style="width: 8rem"
+                        >
+                          <div class="card-header">COLOUR</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Gold</li>
+                          </ul>
+                        </div>
+                        <!-- card 4 -->
+                        <div
+                          class="card card-gender my-2 my-md-0"
+                          style="width: 8rem"
+                        >
+                          <div class="card-header">GENDER</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">Men's</li>
+                          </ul>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="card card-brand my-2" style="width: 8rem">
+                          <div class="card-header">BRAND</div>
+                          <ul
+                            class="list-group list-group-flush list-unstyled"
+                            style="margin-bottom: 0px"
+                          >
+                            <li class="list-group-item">A New Day</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+              </div>
+            </div>
+            <div>
+              <!-- top rated -->
+              <div>
+                <div class="cart__product">
+                  <p>Add product to your Cart</p>
+                </div>
+                <div>
+                  <div class="AddToCart">
+                    <div class="d-flex align-items-start my-3">
+                      <div>
+                        <img
+                          src="../images/5_gold_042764750612888_184996_6605208.jpeg"
+                          class="img-fluid AddToCart__img"
+                        />
+                      </div>
+                      <div class="mx-3">
+                        <div>
+                          <p style="margin-bottom: 0px">Laptop</p>
+                        </div>
+                        <div class="AddToCart__header my-2">
+                          <div style="font-weight: bold">
+                            <p style="margin-bottom: 0px">Y5000</p>
+                          </div>
+                          <div class="">
+                            <button type="button" class="buttonDanger">
+                              View Product
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- bottom nav  -->
     <section class="bottomNav">
       <div
@@ -581,7 +632,10 @@
                 class="bottomNav__img"
               />
             </li>
-            <div class="d-flex flex-wrap justify-content-between" style="margin: 5px 0px;">
+            <div
+              class="d-flex flex-wrap justify-content-between"
+              style="margin: 5px 0px"
+            >
               <li>
                 <i class="fa fa-facebook"></i>
               </li>
@@ -656,7 +710,6 @@
         }
       });
 
-
       // toggle show ad button button
       let showAd = document.getElementById("showAd");
       let showAdDropdown = document.getElementById("showAdDropdown");
@@ -695,8 +748,6 @@
           showAdDropdown3.style.display = "none";
         }
       });
-      
-
     </script>
   </body>
 </html>
