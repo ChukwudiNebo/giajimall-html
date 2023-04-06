@@ -11,6 +11,7 @@
     </style>
     <!-- <link rel="stylesheet" href="body.css" /> -->
     <link rel="stylesheet" href="../css/body.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
     <link rel="stylesheet" href="../css/bottomNav.css" />
     <link rel="stylesheet" href="../css/input.css" />
     <link rel="stylesheet" href="../css/cart.css" />
@@ -31,7 +32,7 @@
   </head>
   <body>
     <section>
-      <div class="pt-2 pt-lg-0 w-100" style="position: fixed; background-color: #F3FAFF;">
+      <div class="pt-2 pt-lg-0 w-100" style="position: fixed; background-color: #F3FAFF;z-index: 40;">
         <div
           class="d-flex flex-nowrap align-items-baseline justify-content-between navbar"
         >
@@ -59,23 +60,115 @@
       </div>
     </section>
 
-    <!-- Search input   -->
-    <section>
-      <div>
-        <div class="text-md-end input__div">
-          <input
-            type="text"
-            name="search"
-            id="input"
-            placeholder="Search by product"
-          />
+    <main class="checkout__main">
+      <!-- Search input   -->
+      <section>
+        <div>
+          <div class="text-md-end input__div">
+            <input
+              type="text"
+              name="search"
+              id="input"
+              placeholder="Search by product"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- checkout form -->
-    <section></section>
+      <section>
+        <div>
+          <p class="cart__header">Checkout</p>
+        </div>
+      </section>
 
+      <!-- checkout form -->
+      <section>
+        <div class="d-flex justify-content-between flex-wrap">
+          <div class="d-flex justify-content-evenly flex-wrap checkout__form">
+            <div>
+              <div>
+                <div>
+                  <p style="margin-bottom: 0px; font-weight: 500">
+                    Customer information
+                  </p>
+                  <hr style="margin-top: 5px;max-width: 85%;" />
+                </div>
+                <div class="">
+                  <form class="d-flex flex-wrap align-items-center">
+                    <div class="form-group checkout__input">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="First Name"
+                        name="name"
+                      />
+                    </div>
+                    <div class="form-group checkout__input">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Last Name"
+                        name="name"
+                      />
+                    </div>
+                    <div class="form-group checkout__input">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email Address"
+                        name="email"
+                        class="ml-5"
+                      />
+                    </div>
+                    <div class="form-group checkout__input">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Phone number"
+                        minlength="6"
+                        name="phoneNumber"
+                      />
+                    </div>
+
+                    <!-- <button type="submit" class="btn signUp-submit mt-4">
+                    checkout
+                  </button> -->
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="orderSummary">
+            <p class="my-3">Order summary</p>
+            <ul class="list-unstyled">
+              <div class="d-flex justify-content-between">
+                <li>Items</li>
+                <p>3</p>
+              </div>
+              <div class="d-flex justify-content-between my-2">
+                <li>Sub Total</li>
+                <p>Y500</p>
+              </div>
+              <div class="d-flex justify-content-between my-2">
+                <li>Tax</li>
+                <p>Y200</p>
+              </div>
+              <hr />
+              <div class="d-flex justify-content-between my-2">
+                <li>Total</li>
+                <p>Y700</p>
+              </div>
+            </ul>
+            <button
+              type="button"
+              class="bg-success text-light p-2 px-4 rounded checkout__proceed"
+            >
+              Proceed
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- bottom nav  -->
     <section class="bottomNav">
       <div
@@ -117,7 +210,10 @@
                 class="bottomNav__img"
               />
             </li>
-            <div class="d-flex flex-wrap">
+            <div
+              class="d-flex flex-wrap justify-content-between"
+              style="margin: 5px 0px"
+            >
               <li>
                 <i class="fa fa-facebook"></i>
               </li>
@@ -127,8 +223,6 @@
               <li>
                 <i class="fa fa-instagram"></i>
               </li>
-              <li></li>
-              <li></li>
             </div>
           </ul>
         </div>
@@ -147,7 +241,7 @@
           </ul>
         </div>
       </div>
-      <div class="text-center">
+      <div class="text-center my-5">
         <p class="bottomNav__copyright">
           © 2023 GaiijinMall.com, All rights reserved
         </p>
