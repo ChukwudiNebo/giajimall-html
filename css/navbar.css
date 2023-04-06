@@ -1,0 +1,137 @@
+@media screen and (min-width: 100px) {
+  .img-fluid {
+    height: 42px;
+    width: 100px;
+  }
+  .navbar {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    position: fixed;
+  }
+  .navbar__content {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .navbar-createAccount {
+    /* padding-left: 5px; */
+    border-left: 1.5px solid black !important;
+    height: 14px;
+    font: 10px / 13.5px "Montserrat", sans-serif;
+    /* font-size: 100px !important; */
+    font-weight: 600;
+  }
+  .navbar__signin {
+    font: 10px / 13.5px "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 576px) {
+    .navbar {
+    padding-left: 90px !important;
+    padding-right: 90px !important;
+    position: fixed;
+  }
+  .img-fluid {
+    height: 42px;
+    width: 128px;
+  }
+  .navbar__content {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .navbar-createAccount {
+    /* padding-left: 5px; */
+    border-left: 1.5px solid black !important;
+    height: 14px;
+    font: 12px / 15px "Montserrat", sans-serif;
+    /* font-size: 100px !important; */
+    font-weight: 600;
+  }
+  .navbar__signin {
+    font: 12px / 12px "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 768px) {
+    .navbar {
+    padding-left: 50px !important;
+    padding-right: 60px !important;
+    position: fixed;
+  }
+  .navbar__content {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .navbar-createAccount {
+    /* padding-left: 5px; */
+    border-left: 1.5px solid black !important;
+    height: 14px;
+    font: 13.2px / 13.5px "Montserrat", sans-serif;
+    /* font-size: 100px !important; */
+    font-weight: 600;
+  }
+  .navbar__signin {
+    font: 13.2px / 13.5px "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding-left: 50px !important;
+    padding-right: 60px !important;
+    position: fixed;
+  }
+  .navbar__content {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .navbar-createAccount {
+    /* padding-left: 5px; */
+    border-left: 1.5px solid black !important;
+    height: 14px;
+    font: 13.2px / 13.5px "Montserrat", sans-serif;
+    /* font-size: 100px !important; */
+    font-weight: 600;
+  }
+  .navbar__signin {
+    font: 13.2px / 13.5px "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-fluid {
+    height: 42px;
+    width: 128px;
+  }
+  .navbar {
+    padding-left: 50px !important;
+    padding-right: 60px !important;
+    position: fixed;
+  }
+
+  .navbar__coolBuy {
+    font-size: 1rem;
+    position: relative;
+    left: -25px;
+    display: inline-flex;
+  }
+  .navbar__content {
+    font-size: 13.2px;
+    font-weight: 600;
+    /* padding-top: 5px; */
+    /* padding-right: 60px !important; */
+  }
+  .navbar-createAccount {
+    /* padding-left: 5px; */
+    border-left: 1.5px solid black !important;
+    height: 14px;
+    font: 13.2px / 13.5px "Montserrat", sans-serif;
+    /* font-size: 100px !important; */
+    font-weight: 600;
+  }
+  .navbar__signin {
+    font: 13.2px / 13.5px "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+}
