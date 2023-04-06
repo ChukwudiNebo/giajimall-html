@@ -88,6 +88,20 @@
     margin-bottom: 0;
     font-weight: 500;
   }
+
+  /* top rated product  */
+  .AddToCart {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  .cart__product {
+    padding: 10px;
+    width: 280px;
+    height: 45px;
+    color: white;
+    background-color: #0b5ed7 !important;
+    /* margin-bottom: 25px; */
+  }
 }
 @media screen and (min-width: 576px) {
   .cart__checkout {
@@ -112,6 +126,14 @@
     margin-top: 0px;
     font-weight: 500;
   }
+  .cart__product {
+    padding: 10px;
+    width: 400px;
+    height: 45px;
+    color: white;
+    background-color: #0b5ed7 !important;
+    /* margin-bottom: 25px; */
+  }
 }
 @media screen and (min-width: 768px) {
   .cart__checkout-paragraph {
@@ -133,7 +155,7 @@
   }
 
   .cart__checkout {
-    width: 50%;
+    width: 100%;
     padding: 20px;
     font-size: 16px;
     color: white;
@@ -168,7 +190,7 @@
   }
   /* cartitem styling  */
   .cart__item {
-    width: 45%;
+    width: 100%;
   }
 
   .cart__item p {
@@ -199,8 +221,63 @@
   }
 
   /* show ad dropdown  */
-  .showAd__dropdown{
+  .showAd__dropdown {
     width: 45%;
+  }
+
+  /* top rated product  */
+  .AddToCart {
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .buttonDanger {
+    /*margin-right: 20px;
+  */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px 31px;
+    border: 1px solid red;
+    color: red;
+    background-color: unset;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .buttonDanger:hover {
+    /*margin-right: 20px;
+  */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px 31px;
+    border: 1px solid red;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .cart__product {
+    padding: 10px;
+    width: 400px;
+    height: 45px;
+    color: white;
+    background-color: #0b5ed7 !important;
+    /* margin-bottom: 25px; */
+  }
+
+  .AddToCart__img{
+    width: 110px;
+    height: 110px !important;
   }
 }
 
